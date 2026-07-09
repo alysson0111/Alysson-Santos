@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alysson Santos Advocacia e Associados | Em construção</title>
+    <meta
+      name="description"
+      content="Site em construção de Alysson Santos Advocacia e Associados."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f7f1e7;
+        --muted: #d2c6b4;
+        --gold: #c8a15a;
+        --gold-soft: #ead6a8;
+        --line: rgba(255, 255, 255, 0.18);
+        --shadow: rgba(0, 0, 0, 0.5);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Georgia,
+          "Times New Roman",
+          serif;
+        background: #10100e;
+        color: var(--ink);
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(10, 10, 9, 0.94) 0%,
+            rgba(18, 17, 15, 0.82) 42%,
+            rgba(18, 17, 15, 0.38) 74%,
+            rgba(12, 11, 10, 0.76) 100%
+          ),
+          url("./alysson-santos-hero.png") center / cover no-repeat;
+        content: "";
+      }
+
+      body::after {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+        background-size: 56px 56px;
+        mask-image: linear-gradient(to bottom, black, transparent 72%);
+        content: "";
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        padding: clamp(24px, 5vw, 72px);
+      }
+
+      .page {
+        width: min(100%, 760px);
+      }
+
+      .brand-mark {
+        width: 68px;
+        height: 68px;
+        display: grid;
+        place-items: center;
+        margin-bottom: clamp(28px, 5vw, 56px);
+        border: 1px solid rgba(232, 211, 166, 0.5);
+        border-radius: 50%;
+        color: var(--gold-soft);
+        font-size: 1.35rem;
+        letter-spacing: 0;
+        line-height: 1;
+        box-shadow: 0 20px 60px var(--shadow);
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--gold-soft);
+        font-family:
+          Inter,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 720px;
+        margin: 0;
+        color: var(--ink);
+        font-size: clamp(3rem, 8vw, 6.5rem);
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 0.94;
+        text-shadow: 0 24px 70px rgba(0, 0, 0, 0.58);
+      }
+
+      .subtitle {
+        max-width: 610px;
+        margin: clamp(22px, 3vw, 34px) 0 0;
+        color: var(--muted);
+        font-family:
+          Inter,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.7;
+      }
+
+      .divider {
+        width: min(100%, 500px);
+        height: 1px;
+        margin: clamp(30px, 5vw, 52px) 0;
+        background: linear-gradient(90deg, var(--gold), var(--line), transparent);
+      }
+
+      .status {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+        font-family:
+          Inter,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        color: var(--ink);
+      }
+
+      .status strong {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid rgba(232, 211, 166, 0.45);
+        padding: 0 18px;
+        background: rgba(18, 16, 13, 0.42);
+        color: var(--gold-soft);
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        backdrop-filter: blur(14px);
+      }
+
+      .status span {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        position: fixed;
+        right: clamp(24px, 5vw, 72px);
+        bottom: clamp(22px, 4vw, 46px);
+        left: clamp(24px, 5vw, 72px);
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        border-top: 1px solid var(--line);
+        padding-top: 18px;
+        color: rgba(247, 241, 231, 0.72);
+        font-family:
+          Inter,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 0.84rem;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          align-items: start;
+          padding-top: 44px;
+          padding-bottom: 150px;
+        }
+
+        body::before {
+          background:
+            linear-gradient(
+              180deg,
+              rgba(10, 10, 9, 0.95) 0%,
+              rgba(16, 15, 13, 0.86) 54%,
+              rgba(11, 10, 9, 0.74) 100%
+            ),
+            url("./alysson-santos-hero.png") 64% center / cover no-repeat;
+        }
+
+        .brand-mark {
+          width: 58px;
+          height: 58px;
+          margin-bottom: 36px;
+          font-size: 1.1rem;
+        }
+
+        h1 {
+          font-size: clamp(2.65rem, 16vw, 4.6rem);
+        }
+
+        .status {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        footer {
+          position: static;
+          flex-direction: column;
+          padding: 0 clamp(24px, 5vw, 72px) 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="page" aria-label="Site em construção">
+        <div class="brand-mark" aria-hidden="true">AS</div>
+        <p class="eyebrow">Alysson Santos Advocacia e Associados</p>
+        <h1>Site em construção</h1>
+        <p class="subtitle">
+          Estamos preparando um novo espaço digital para apresentar nosso
+          escritório, áreas de atuação e canais oficiais de atendimento.
+        </p>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="status">
+          <strong>Em breve</strong>
+          <span>Uma nova presença online com a seriedade que a advocacia exige.</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Alysson Santos Advocacia e Associados</span>
+      <span>Advocacia com responsabilidade, estratégia e discrição.</span>
+    </footer>
+  </body>
+</html>
