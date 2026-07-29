@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="AS">
+  <defs>
+    <linearGradient id="gold" x1="16" y1="8" x2="82" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff0bd"/>
+      <stop offset=".34" stop-color="#d1a24e"/>
+      <stop offset=".68" stop-color="#f3d38a"/>
+      <stop offset="1" stop-color="#9d7230"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="26" y1="12" x2="68" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff8d5" stop-opacity=".9"/>
+      <stop offset=".55" stop-color="#fff8d5" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#fff8d5" stop-opacity=".55"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <text
+      x="48"
+      y="70"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="68"
+      font-weight="700"
+      letter-spacing="-8"
+      fill="url(#gold)"
+      stroke="#f8df9d"
+      stroke-width=".7"
+    >AS</text>
+    <text
+      x="48"
+      y="70"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="68"
+      font-weight="700"
+      letter-spacing="-8"
+      fill="url(#shine)"
+      opacity=".72"
+    >AS</text>
+  </g>
+</svg>
