@@ -8,8 +8,8 @@
       name="description"
       content="Site em construção de Alysson Santos Advocacia e Associados."
     />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./alysson-santos-logo-premium.png" type="image/png" />
+    <link rel="alternate icon" href="./favicon.svg" type="image/svg+xml" />
     <style>
       :root {
         color-scheme: dark;
@@ -82,18 +82,17 @@
       }
 
       .brand-mark {
-        width: 68px;
-        height: 68px;
-        display: grid;
-        place-items: center;
+        width: min(250px, 58vw);
+        display: block;
         margin-bottom: clamp(28px, 5vw, 56px);
-        border: 1px solid rgba(232, 211, 166, 0.5);
-        border-radius: 50%;
-        color: var(--gold-soft);
-        font-size: 1.35rem;
-        letter-spacing: 0;
-        line-height: 1;
-        box-shadow: 0 20px 60px var(--shadow);
+        filter: drop-shadow(0 24px 52px rgba(0, 0, 0, 0.52));
+      }
+
+      .brand-mark img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
       }
 
       .eyebrow {
@@ -236,10 +235,8 @@
         }
 
         .brand-mark {
-          width: 58px;
-          height: 58px;
+          width: min(210px, 70vw);
           margin-bottom: 36px;
-          font-size: 1.1rem;
         }
 
         h1 {
@@ -266,7 +263,9 @@
   <body>
     <main>
       <section class="page" aria-label="Site em construção">
-        <div class="brand-mark" aria-hidden="true">AS</div>
+        <div class="brand-mark" aria-hidden="true">
+          <img src="./alysson-santos-logo-premium.png" alt="" />
+        </div>
         <p class="eyebrow">Alysson Santos Advocacia e Associados</p>
         <h1>Site em construção</h1>
         <p class="subtitle">
